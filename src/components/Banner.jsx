@@ -3,7 +3,7 @@ import { ocean } from "../assets";
 const Banner = () => {
   return (
     <div
-      className="w-[1265px] h-[401px] 
+      className="w-[1426px] h-[401px] 
     rounded-[30px] absolute right-[67px] z-10 overflow-hidden"
     >
       <img
