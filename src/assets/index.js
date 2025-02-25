@@ -15,6 +15,7 @@ import hotel from "./hotel.jpg";
 import office from "./office.jpg";
 import people from "./people.jpg";
 import ocean from "./ocean.jpg";
+import coWorker from "./coworker.jpg";
 
 export {
   one,
@@ -34,4 +35,5 @@ export {
   office,
   people,
   ocean,
+  coWorker,
 };
