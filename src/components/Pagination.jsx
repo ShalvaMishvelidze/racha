@@ -2,7 +2,7 @@ import PageNum from "./PageNum";
 
 const Pagination = () => {
   return (
-    <div className="flex items-center gap-[18px] mt-[60px] h-[46px] pb-[220px]">
+    <div className="flex items-center gap-[18px] mt-[60px] h-[46px]">
       <PageNum number={1} />
       <PageNum number={2} />
       <PageNum number={3} />

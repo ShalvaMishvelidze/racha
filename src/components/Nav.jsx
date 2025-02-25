@@ -1,12 +1,13 @@
+import { Link } from "react-router";
+
 const Nav = () => {
   return (
     <nav className="flex gap-15 text-blue-primary font-bold *:hover:text-red-primary leading-[20px] pt-4">
-      <a href="#">მთავარი</a>
-      <a href="#">სერვისები</a>
-      <a href="#">ჩვენი გუნდი</a>
-      <a href="#">სიახლეები</a>
-      <a href="#">კონტაკტი</a>
-      <a href="#">კონტაკტი</a>
+      <Link to={"/"}>მთავარი</Link>
+      <Link to={"/services"}>სერვისები</Link>
+      <Link to={"/team"}>ჩვენი გუნდი</Link>
+      <Link to={"/news"}>სიახლეები</Link>
+      <Link to={"/contact"}>კონტაკტი</Link>
     </nav>
   );
 };

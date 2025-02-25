@@ -1,19 +1,19 @@
 import HotelsContainer from "./HotelsContainer";
 import Pagination from "./Pagination";
-import Section from "./Section";
+import ServicesSection from "./ServicesSection";
 
-const Hotels = () => {
+const ServicesHotels = ({ number }) => {
   return (
-    <Section
+    <ServicesSection
       heading={"სასტუმროები"}
       paragraph={
         "დაჯავშნე სასტუმროები, ჩვენი პლათფორმის საშუალებით, სადაც ჯერ კიდევ უცნობ და საინტერესო სივრცეებს აღმოაჩენ"
       }
-      number={"03"}
+      number={number}
     >
       <HotelsContainer />
       <Pagination />
-    </Section>
+    </ServicesSection>
   );
 };
-export default Hotels;
+export default ServicesHotels;

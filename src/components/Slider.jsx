@@ -14,19 +14,19 @@ const Slider = () => {
       />
       <div className="absolute right-[50px] bottom-[50px] flex gap-[35px]">
         <button
-          className="group size-12 border border-white rounded-full 
-        flex justify-center items-center hover:bg-white cursor-pointer
+          className="group size-12 border border-[#ffffff] rounded-full 
+        flex justify-center items-center hover:bg-[#ffffff] cursor-pointer
         "
           type="button"
         >
-          <BsArrowLeft className="text-white text-[24px] group-hover:text-black " />
+          <BsArrowLeft className="text-[#ffffff] text-[24px] group-hover:text-[#000000] " />
         </button>
         <button
           type="button"
-          className="group size-12 border border-white rounded-full 
-        flex justify-center items-center hover:bg-white cursor-pointer"
+          className="group size-12 border border-[#ffffff] rounded-full 
+        flex justify-center items-center hover:bg-[#ffffff] cursor-pointer"
         >
-          <BsArrowRight className="text-white text-[24px] group-hover:text-black " />
+          <BsArrowRight className="text-[#ffffff] text-[24px] group-hover:text-[#000000] " />
         </button>
       </div>
     </div>
