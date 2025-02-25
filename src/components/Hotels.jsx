@@ -1,4 +1,6 @@
+import Pagination from "./Pagination";
 import Section from "./Section";
+import SingleHotel from "./SingleHotel";
 
 const Hotels = () => {
   return (
@@ -9,7 +11,12 @@ const Hotels = () => {
       }
       number={"03"}
     >
-      <h1>hello</h1>
+      <div className="flex justify-between mt-[71px] flex-wrap gap-[110px]">
+        <SingleHotel />
+        <SingleHotel />
+        <SingleHotel />
+      </div>
+      <Pagination />
     </Section>
   );
 };

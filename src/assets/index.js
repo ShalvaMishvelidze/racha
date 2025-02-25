@@ -11,6 +11,10 @@ import frame2 from "./frame-2.svg";
 import frameRectangle from "./frame-rectangle.svg";
 import rectangle from "./rectangle.svg";
 import userBcg from "./user-bcg.svg";
+import hotel from "./hotel.jpg";
+import office from "./office.jpg";
+import people from "./people.jpg";
+import ocean from "./ocean.jpg";
 
 export {
   one,
@@ -26,4 +30,8 @@ export {
   frameRectangle,
   rectangle,
   userBcg,
+  hotel,
+  office,
+  people,
+  ocean,
 };

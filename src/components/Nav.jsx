@@ -1,6 +1,6 @@
 const Nav = () => {
   return (
-    <nav className="flex gap-15 text-[#25304A font-bold *:hover:text-[#CB5366] leading-[20px] pt-4">
+    <nav className="flex gap-15 text-blue-primary font-bold *:hover:text-red-primary leading-[20px] pt-4">
       <a href="#">მთავარი</a>
       <a href="#">სერვისები</a>
       <a href="#">ჩვენი გუნდი</a>

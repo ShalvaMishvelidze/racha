@@ -6,17 +6,17 @@ const HeroNavItem = ({ heading, paragraph, Icon }) => {
       <div className="flex gap-[21px] items-center mb-4">
         <div
           className="size-[108px] flex justify-center items-center 
-        border-[3px] border-solid border-[#25304A] rounded-full group-hover:border-transparent group-hover:bg-[#CB5366]"
+        border-[3px] border-solid border-blue-primary rounded-full group-hover:border-transparent group-hover:bg-red-primary"
         >
-          <Icon className="text-[40px] text-[#25304A] group-hover:text-white" />
+          <Icon className="text-[40px] text-blue-primary group-hover:text-[#ffffff]" />
         </div>
-        <h1 className="text-[20px] leading-[25px] text-[#25304A] font-bold ">
+        <h1 className="text-[20px] leading-[25px] text-blue-primary font-bold ">
           {heading}
         </h1>
       </div>
-      <p className="flex items-center gap-4 text-[#25304A] font-bold text-[20px] leading-[25px] group-hover:text-[#CB5366]">
+      <p className="flex items-center gap-4 text-blue-primary font-bold text-[20px] leading-[25px] group-hover:text-red-primary">
         {paragraph}
-        <FiArrowUpRight className="text-[40px] group-hover:text-[#CB5366] mt-2" />
+        <FiArrowUpRight className="text-[40px] group-hover:text-red-primary mt-2" />
       </p>
     </a>
   );

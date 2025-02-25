@@ -10,13 +10,13 @@ export const HeroNav = () => {
         paragraph={"გამოგვყევი"}
         Icon={BiBriefcase}
       />
-      <div className="h-[58px] w-[2px] rounded-[3px] bg-black"></div>
+      <div className="h-[58px] w-[2px] rounded-[3px] bg-black opacity-50"></div>
       <HeroNavItem
         heading={"ადილობრივი მეწარმეობა"}
         paragraph={"შეიძინე"}
         Icon={FaShoppingBasket}
       />
-      <div className="h-[58px] w-[2px] rounded-[3px] bg-black"></div>
+      <div className="h-[58px] w-[2px] rounded-[3px] bg-black opacity-50"></div>
       <HeroNavItem
         heading={"სასტუმროები"}
         paragraph={"დაჯავშნე"}
