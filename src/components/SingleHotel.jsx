@@ -9,7 +9,7 @@ const SingleHotel = () => {
       href="#"
       className="group flex flex-col border-b border-blue-primary relative"
     >
-      <div className="w-[505px] h-[462px] mb-[60px] group-hover:bg-gradient-to-b from-white-transparent to-white relative z-100"></div>
+      <div className="w-[505px] h-[462px] mb-[60px] rounded-[20px] group-hover:bg-gradient-to-b from-white-transparent to-[#ffffff] relative z-100"></div>
       <img
         className="w-[505px] h-[462px] rounded-[20px] object-cover absolute top-0 left-0 z-10"
         src={hotel}
