@@ -3,19 +3,21 @@ import { ocean } from "../assets";
 
 const Slider = () => {
   return (
-    <div
-      className="w-[1265px] max-sm:w-full  h-[568px] max-sm:h-[274px]
-    rounded-[30px] absolute max-sm:relative right-[67px] max-sm:right-0 z-10 overflow-hidden"
-    >
-      <img
-        className="w-full h-full object-cover opacity-65"
-        src={ocean}
-        alt="ocean"
-      />
+    <>
       <div
-        className="absolute right-[50px] max-sm:right-[26px] 
+        className="z-10 w-[1265px] max-sm:w-full  h-[568px] max-sm:h-[274px]
+    rounded-[30px] absolute max-sm:relative right-[67px] max-sm:right-0 z-10 overflow-hidden"
+      >
+        <img
+          className="w-full h-full object-cover opacity-65"
+          src={ocean}
+          alt="ocean"
+        />
+      </div>
+      <div
+        className="absolute right-[110px] max-sm:right-[26px] 
       bottom-[50px] max-sm:bottom-[28px] flex gap-[35px] 
-      max-sm:gap-[20px]"
+      max-sm:gap-[20px] z-50"
       >
         <button
           className="group size-12 max-sm:size-[32px] border border-[#ffffff] rounded-full 
@@ -33,7 +35,7 @@ const Slider = () => {
           <BsArrowRight className="text-[#ffffff] text-[24px] max-sm:text-[18px] group-hover:text-[#000000] " />
         </button>
       </div>
-    </div>
+    </>
   );
 };
 export default Slider;

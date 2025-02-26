@@ -16,7 +16,7 @@ const Hero = () => {
     }
   }, [darkMode]);
   return (
-    <section className="relative h-[710px] max-sm:h-auto pt-[142px] max-sm:pt-[156px] mx-25 max-sm:mx-5 flex flex-col justify-center">
+    <section className="relative z-1 h-[710px] max-sm:h-auto pt-[142px] max-sm:pt-[156px] mx-25 max-sm:mx-5 flex flex-col justify-center">
       <Slider />
       <div className="z-20 flex flex-col max-sm:h-full max-sm:w-full gap-10 max-sm:absolute top-0 left-0">
         <h1
