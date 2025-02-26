@@ -2,7 +2,7 @@ import SingleHotel from "./SingleHotel";
 
 const HotelsContainer = () => {
   return (
-    <div className="flex justify-between mt-[71px] flex-wrap gap-[110px]">
+    <div className="flex justify-between max-sm:flex-col mt-[71px] gap-[110px] max-sm:gap-[16px]">
       <SingleHotel />
       <SingleHotel />
       <SingleHotel />

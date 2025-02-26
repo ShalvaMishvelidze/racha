@@ -3,6 +3,12 @@ export default {
   darkMode: "class", // Enables class-based dark mode
   theme: {
     extend: {
+      screens: {
+        sm: "300px",
+        // sm: "414px", // Small
+        md: "768px", // Medium
+        lg: "976px", // Large
+      },
       colors: {
         blue: {
           primary: "var(--color-blue-primary)",

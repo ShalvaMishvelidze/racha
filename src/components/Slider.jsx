@@ -4,29 +4,33 @@ import { ocean } from "../assets";
 const Slider = () => {
   return (
     <div
-      className="w-[1265px] h-[568px] 
-    rounded-[30px] absolute right-[67px] z-10 overflow-hidden"
+      className="w-[1265px] max-sm:w-full  h-[568px] max-sm:h-[274px]
+    rounded-[30px] absolute max-sm:relative right-[67px] max-sm:right-0 z-10 overflow-hidden"
     >
       <img
         className="w-full h-full object-cover opacity-65"
         src={ocean}
         alt="ocean"
       />
-      <div className="absolute right-[50px] bottom-[50px] flex gap-[35px]">
+      <div
+        className="absolute right-[50px] max-sm:right-[26px] 
+      bottom-[50px] max-sm:bottom-[28px] flex gap-[35px] 
+      max-sm:gap-[20px]"
+      >
         <button
-          className="group size-12 border border-[#ffffff] rounded-full 
+          className="group size-12 max-sm:size-[32px] border border-[#ffffff] rounded-full 
         flex justify-center items-center hover:bg-[#ffffff] cursor-pointer
         "
           type="button"
         >
-          <BsArrowLeft className="text-[#ffffff] text-[24px] group-hover:text-[#000000] " />
+          <BsArrowLeft className="text-[#ffffff] text-[24px] max-sm:text-[18px] group-hover:text-[#000000] " />
         </button>
         <button
           type="button"
-          className="group size-12 border border-[#ffffff] rounded-full 
+          className="group size-12 max-sm:size-[32px] border border-[#ffffff] rounded-full 
         flex justify-center items-center hover:bg-[#ffffff] cursor-pointer"
         >
-          <BsArrowRight className="text-[#ffffff] text-[24px] group-hover:text-[#000000] " />
+          <BsArrowRight className="text-[#ffffff] text-[24px] max-sm:text-[18px] group-hover:text-[#000000] " />
         </button>
       </div>
     </div>
