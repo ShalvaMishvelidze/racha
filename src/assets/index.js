@@ -16,6 +16,7 @@ import office from "./office.jpg";
 import people from "./people.jpg";
 import ocean from "./ocean.jpg";
 import coWorker from "./coworker.jpg";
+import addressMap from "./map.png";
 
 export {
   one,
@@ -36,4 +37,5 @@ export {
   people,
   ocean,
   coWorker,
+  addressMap,
 };
