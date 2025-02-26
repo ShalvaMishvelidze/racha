@@ -3,8 +3,28 @@ import { userBcg } from "../assets";
 import Nav from "./Nav";
 import { PiHeartStraightLight } from "react-icons/pi";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { useEffect, useState } from "react";
+import Aside from "./Aside";
+import { FaXmark } from "react-icons/fa6";
 
 const Header = () => {
+  const [aside, setAside] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (width > 414) {
+      setAside(false);
+    }
+  }, [width]);
+
   return (
     <header
       className="absolute w-full top-0 left-0 flex justify-between items-start 
@@ -49,10 +69,19 @@ const Header = () => {
             Eng
           </span>
         </div>
-        <button className="hidden max-sm:block" type="button">
-          <HiOutlineMenuAlt3 className="text-[32px] text-blue-primary" />
+        <button
+          className="hidden max-sm:block"
+          type="button"
+          onClick={() => setAside(!aside)}
+        >
+          {aside ? (
+            <FaXmark className="text-[32px] text-blue-primary" />
+          ) : (
+            <HiOutlineMenuAlt3 className="text-[32px] text-blue-primary" />
+          )}
         </button>
       </div>
+      {aside && <Aside />}
     </header>
   );
 };
