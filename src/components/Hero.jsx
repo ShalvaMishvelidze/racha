@@ -1,20 +1,9 @@
-import { useLayoutEffect, useState } from "react";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 import Slider from "./Slider";
+import ThemeBtn from "./ThemeBtn";
 
 const Hero = () => {
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("theme") === "dark"
-  );
-
-  useLayoutEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [darkMode]);
+  const [user] = useLocalStorage("user", null);
   return (
     <section className="relative z-1 h-[710px] max-sm:h-auto pt-[142px] max-sm:pt-[156px] mx-25 max-sm:mx-5 flex flex-col justify-center">
       <Slider />
@@ -37,26 +26,22 @@ const Hero = () => {
           ღირსშესანიშნაობებს.
         </p>
       </div>
-      <div
-        className="absolute left-0 bottom-0 
-      max-sm:right-0 max-sm:top-[90px] max-sm:left-auto
+      {user && (
+        <div
+          className="absolute left-0 bottom-0 
+      max-sm:right-0 max-sm:top-[80px] max-sm:left-auto
        max-sm:bottom-auto flex gap-[21px] 
        max-sm:gap-[7px] items-center z-100"
-      >
-        <h1
-          className="leading-[32px] text-blue-primary font-bold 
+        >
+          <h1
+            className="leading-[32px] text-blue-primary font-bold 
         max-sm:text-[12px] max-sm:leading-[32px] max-sm:font-normal"
-        >
-          DARK MODE
-        </h1>
-        <button
-          type="button"
-          className="cursor-pointer relative w-[108px] max-sm:w-[81px] h-[40px] bg-gray-20 rounded-[50px] "
-          onClick={() => setDarkMode(!darkMode)}
-        >
-          <div className="size-[28px] bg-[#ffffff] rounded-full absolute top-1/2 transform -translate-y-1/2 right-[6px]"></div>
-        </button>
-      </div>
+          >
+            DARK MODE
+          </h1>
+          <ThemeBtn />
+        </div>
+      )}
       <h2
         className="text-[20px] text-blue-primary rotate-90 w-auto 
       absolute -right-27 bottom-20 z-100 max-sm:hidden"

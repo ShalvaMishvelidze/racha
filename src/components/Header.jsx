@@ -6,10 +6,14 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { useEffect, useState } from "react";
 import Aside from "./Aside";
 import { FaXmark } from "react-icons/fa6";
+import { useLocalStorage } from "../hooks/useLocalStorage";
+import AuthBtns from "./AuthBtns";
+import ThemeBtn from "./ThemeBtn";
 
 const Header = () => {
   const [aside, setAside] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
+  const [localUser] = useLocalStorage("user", null);
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
@@ -51,19 +55,27 @@ const Header = () => {
         <Nav />
       </div>
       <div className="flex gap-6 max-sm:gap-[22px] justify-center items-center">
-        <div className="flex justify-center items-center gap-4  max-sm:gap-[12px]">
-          <h2 className="text-blue-primary max-sm:text-[13px] max-sm:leading-[38px] font-bold">
-            GIORGI 99
-          </h2>
-          <div className="relative max-sm:size-[38px] w-14 h-14 cursor-pointer">
-            <FaUser className="max-sm:text-[18px] text-[24px] text-[#ffffff] absolute top-1/2 left-1/2 transform -translate-1/2 z-10" />
-            <img
-              src={userBcg}
-              alt="user background"
-              className="absolute top-0 left-0 w-full h full"
-            />
+        {!localUser && (
+          <div className="max-sm:hidden">
+            <AuthBtns />
           </div>
-        </div>
+        )}
+        {!localUser && <ThemeBtn />}
+        {localUser && (
+          <div className="flex justify-center items-center gap-[44px]  max-sm:gap-[12px]">
+            <h2 className="text-blue-primary max-sm:text-[13px] max-sm:leading-[38px] font-bold">
+              GIORGI 99
+            </h2>
+            <div className="relative max-sm:size-[38px] w-14 h-14 cursor-pointer">
+              <FaUser className="max-sm:text-[18px] text-[24px] text-[#ffffff] absolute top-1/2 left-1/2 transform -translate-1/2 z-10" />
+              <img
+                src={userBcg}
+                alt="localUser background"
+                className="absolute top-0 left-0 w-full h full"
+              />
+            </div>
+          </div>
+        )}
         <div className="max-sm:size-[38px] relative border-[2px] border-blue-primary flex justify-center items-center w-14 h-14 cursor-pointer rounded-full">
           <span className="max-sm:text-[14px] leading-[19px] text-blue-primary font-bold">
             Eng
@@ -82,6 +94,11 @@ const Header = () => {
         </button>
       </div>
       {aside && <Aside />}
+      {!localUser && (
+        <div className="hidden max-sm:block">
+          <AuthBtns />
+        </div>
+      )}
     </header>
   );
 };

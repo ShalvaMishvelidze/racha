@@ -1,20 +1,9 @@
-import { useLayoutEffect, useState } from "react";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 import Banner from "./Banner";
+import ThemeBtn from "./ThemeBtn";
 
 const HeroBanner = ({ heading }) => {
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("theme") === "dark"
-  );
-
-  useLayoutEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [darkMode]);
+  const [user] = useLocalStorage("user", null);
   return (
     <section
       className="relative h-[552px] pt-[142px] 
@@ -31,22 +20,18 @@ const HeroBanner = ({ heading }) => {
           {heading}
         </h1>
       </div>
-      <div
-        className="absolute left-0 bottom-0 
+      {user && (
+        <div
+          className="absolute left-0 bottom-0 
       max-sm:left-auto max-sm:bottom-auto max-sm:right-0 max-sm:top-[80px]
        flex gap-[21px] items-center z-100 max-sm:gap-[10px]"
-      >
-        <h1 className="leading-[32px] max-sm:text-[12px] text-blue-primary font-bold max-sm:font-normal">
-          DARK MODE
-        </h1>
-        <button
-          type="button"
-          className="cursor-pointer relative w-[108px] max-sm:w-[81px] h-[40px] bg-gray-20 rounded-[50px] "
-          onClick={() => setDarkMode(!darkMode)}
         >
-          <div className="size-[28px] bg-[#ffffff] rounded-full absolute top-1/2 transform -translate-y-1/2 right-[6px]"></div>
-        </button>
-      </div>
+          <h1 className="leading-[32px] max-sm:text-[12px] text-blue-primary font-bold max-sm:font-normal">
+            DARK MODE
+          </h1>
+          <ThemeBtn />
+        </div>
+      )}
       <h2
         className="text-[20px] text-blue-primary rotate-90 w-auto 
       absolute -right-27 bottom-20 z-100 max-sm:hidden"
