@@ -60,7 +60,11 @@ const Header = () => {
             <AuthBtns />
           </div>
         )}
-        {!localUser && <ThemeBtn />}
+        {!localUser && (
+          <div className="hidden max-sm:block">
+            <ThemeBtn />
+          </div>
+        )}
         {localUser && (
           <div className="flex justify-center items-center gap-[44px]  max-sm:gap-[12px]">
             <h2 className="text-blue-primary max-sm:text-[13px] max-sm:leading-[38px] font-bold">
