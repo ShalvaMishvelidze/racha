@@ -47,7 +47,7 @@ const RegisterDesktop = () => {
         რეგისტრაცია
       </h1>
       <form onSubmit={handleSubmit}>
-        <div className="grid grid-cols-3 gap-[91px]">
+        <div className="grid grid-cols-3 gap-[91px] mt-[54px]">
           <InputDesktop
             label={"სახელი"}
             type={"text"}

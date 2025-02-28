@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Register from "./Register";
+import Authorization from "./Authorization";
 
 const AuthBtns = () => {
   const [reg, setReg] = useState(false);
@@ -36,6 +37,7 @@ const AuthBtns = () => {
           ავტორიზაცია
         </button>
         {reg && <Register />}
+        {auth && <Authorization />}
       </div>
     </>
   );

@@ -1,7 +1,7 @@
-import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { addressMap } from "../assets";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlinePhoneIphone } from "react-icons/md";
+import SocialsContainer from "./SocialsContainer";
 
 const ContactContainer = () => {
   return (
@@ -21,19 +21,7 @@ const ContactContainer = () => {
         src={addressMap}
         alt="map"
       />
-      <div className="flex justify-between mt-[78px] max-sm:mt-[24px]">
-        <h1
-          className="text-[40px] max-sm:text-[16px] 
-        leading-[49px] max-sm:leading-[19px] 
-        text-blue-primary font-bold"
-        >
-          rachawithlove@gmail.com
-        </h1>
-        <div className="flex items-center gap-[37px] max-sm:gap-[12px]">
-          <FaFacebook className="text-blue-primary text-[42px] max-sm:text-[15px]" />
-          <FaInstagram className="text-blue-primary text-[42px]  max-sm:text-[15px]" />
-        </div>
-      </div>
+      <SocialsContainer />
       <div className="flex gap-[80px] max-sm:gap-[20px] mt-[55px] max-sm:mt-[20px] items-center">
         <div className="flex items-center gap-[18px] max-sm:gap-[8px]">
           <MdOutlinePhoneIphone className=" text-blue-primary text-[30px] max-sm:text-[20px] " />
