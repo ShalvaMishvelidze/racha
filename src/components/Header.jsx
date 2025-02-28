@@ -70,7 +70,7 @@ const Header = () => {
           </span>
         </div>
         <button
-          className="hidden max-sm:block"
+          className="hidden max-sm:block cursor-pointer"
           type="button"
           onClick={() => setAside(!aside)}
         >
