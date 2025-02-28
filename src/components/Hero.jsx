@@ -42,6 +42,20 @@ const Hero = () => {
           <ThemeBtn />
         </div>
       )}
+      <div
+        className="absolute left-0 bottom-0 
+      max-sm:right-0 max-sm:top-[80px] max-sm:left-auto
+       max-sm:bottom-auto flex gap-[21px] 
+       max-sm:gap-[7px] items-center z-100 max-sm:hidden "
+      >
+        <h1
+          className="leading-[32px] text-blue-primary font-bold 
+        max-sm:text-[12px] max-sm:leading-[32px] max-sm:font-normal"
+        >
+          DARK MODE
+        </h1>
+        <ThemeBtn />
+      </div>
       <h2
         className="text-[20px] text-blue-primary rotate-90 w-auto 
       absolute -right-27 bottom-20 z-100 max-sm:hidden"
