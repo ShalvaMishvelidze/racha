@@ -23,10 +23,9 @@ const AuthorizationDesktop = () => {
 
   return (
     <div
-      className="max-xl:hidden w-[1384px]
+      className="max-xl:hidden w-[1384px] max-xxl:w-[1000px] max-xxl:rounded-[24px]
   rounded-[30px] absolute bg-gray-15 top-[95px] 
-  right-0 opacity-90 pl-[100px] pt-[100px] 
-  pb-[48px] pr-[53px]"
+  right-0 opacity-90 pl-[100px] max-xxl:pl-[25px] pt-[100px] max-xxl:pt-[25px] pb-[48px] max-xxl:pb-[25px] pr-[53px] max-xxl:pr-[25px] "
     >
       <h1
         className="text-[30px] leading-[30px] tracking-[1.5px]

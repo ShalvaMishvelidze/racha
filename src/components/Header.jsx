@@ -33,9 +33,9 @@ const Header = () => {
     <>
       <header
         className="absolute w-full top-0 left-0 flex justify-between items-start 
-    px-[100px] max-xl:px-[20px] py-12 max-lg:py-5 z-100"
+    px-[100px] max-xxl:px-[20px] py-12 max-lg:py-5 z-100"
       >
-        <div className="flex items-start gap-[100px] max-xl:gap-[25px]">
+        <div className="flex items-start gap-[100px] max-xxl:gap-[25px]">
           <div
             className="w-[147px] max-lg:w-[50px] h-[135px] max-lg:h-[40px]
            bg-red-80 rounded-tl-[24px] max-lg:rounded-tl-[5px] 
@@ -43,13 +43,13 @@ const Header = () => {
            rounded-tr-lg rounded-tr-[15px] 
            rounded-bl-lg rounded-bl-[15px] 
         flex flex-col justify-center items-center 
-        cursor-pointer max-xl:h-[90px] max-xl:w-[110px]"
+        cursor-pointer max-xxl:h-[90px] max-xxl:w-[110px]"
           >
-            <PiHeartStraightLight className="text-[#ffffff] text-[90px] max-lg:text-[32px] max-xl:text-[54px]" />
-            <h1 className="text-[24px] max-lg:text-[5px] font-bold max-lg:font-normal text-[#ffffff] max-xl:text-[16px]">
+            <PiHeartStraightLight className="text-[#ffffff] text-[90px] max-lg:text-[32px] max-xxl:text-[54px]" />
+            <h1 className="text-[24px] max-lg:text-[5px] font-bold max-lg:font-normal text-[#ffffff] max-xxl:text-[16px]">
               With Love
             </h1>
-            <span className="text-[8px] max-lg:text-[2px] text-[#ffffff] mb-1 max-xl:text-[6px] ">
+            <span className="text-[8px] max-lg:text-[2px] text-[#ffffff] mb-1 max-xxl:text-[6px] ">
               RACHA
             </span>
           </div>

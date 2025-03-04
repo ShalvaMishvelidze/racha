@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const SocialsContainer = ({ clr }) => {
   return (
-    <div className="flex justify-between mt-[78px] max-lg:mt-[24px]">
+    <div className="flex justify-between mt-[78px] max-xxl:mt-[24px]">
       <h1
         className={
           "text-[40px] max-lg:text-[16px] leading-[49px] max-lg:leading-[19px] text-blue-primary font-bold " +
