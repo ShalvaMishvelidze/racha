@@ -4,7 +4,7 @@ import SingleNews from "../components/SingleNews";
 
 const News = () => {
   return (
-    <main className="bg-primary pb-[200px] max-sm:pb-[95px]">
+    <section className="max-w-[1920px] bg-primary pb-[200px] max-sm:pb-[95px]">
       <HeroBanner heading={"სიახლეები"} />
       <p
         className="mx-25 max-sm:mx-0 max-sm:px-5 
@@ -26,7 +26,7 @@ const News = () => {
       <div className="mx-25 max-sm:mx-5 max-sm:mt-[50px]">
         <Pagination />
       </div>
-    </main>
+    </section>
   );
 };
 export default News;

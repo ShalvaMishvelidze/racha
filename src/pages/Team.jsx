@@ -3,7 +3,7 @@ import TeamContainer from "../components/TeamContainer";
 
 const Team = () => {
   return (
-    <main className="bg-primary pb-[180px] max-sm:pb-[100px]">
+    <section className="max-w-[1920px] bg-primary pb-[180px] max-sm:pb-[100px]">
       <HeroBanner heading={"ჩვენი გუნდი"} />
       <p
         className="mx-25 max-sm:mx-0 max-sm:px-5 mt-[88px] max-sm:mt-[35px] w-[70%] max-sm:w-full 
@@ -16,7 +16,7 @@ const Team = () => {
         განვითარებაში მონაწილეობის მიღებაა.
       </p>
       <TeamContainer />
-    </main>
+    </section>
   );
 };
 export default Team;

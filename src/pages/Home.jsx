@@ -18,7 +18,7 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="bg-primary pb-[220px] max-md:pb-[67px] ">
+    <section className="bg-primary pb-[220px] max-md:pb-[67px] ">
       <Hero
         heading={"რაჭა ჩვენი სიყვარულია"}
         paragraph={
@@ -36,7 +36,7 @@ const Home = () => {
       )}
       {width > 414 ? <Services number={"02"} /> : <About number={"02"} />}
       <Hotels number={"03"} />
-    </main>
+    </section>
   );
 };
 export default Home;

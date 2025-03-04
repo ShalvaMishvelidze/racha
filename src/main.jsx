@@ -9,9 +9,11 @@ import Footer from "./components/Footer";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <Header />
-      <App />
-      <Footer />
+      <main className="flex flex-col justify-center items-center w-full relative bg-primary">
+        <Header />
+        <App />
+        <Footer />
+      </main>
     </BrowserRouter>
   </StrictMode>
 );
