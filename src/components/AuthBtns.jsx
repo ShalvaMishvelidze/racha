@@ -21,7 +21,10 @@ const AuthBtns = () => {
         text-[#ffffff] 
               cursor-pointer text-[14px] leading-[18px] font-bold"
           type="button"
-          onClick={() => setReg(!reg)}
+          onClick={() => {
+            setAuth(false);
+            setReg(!reg);
+          }}
         >
           რეგისტრაცია
         </button>
@@ -32,7 +35,10 @@ const AuthBtns = () => {
         text-blue-primary border-[2px] border-blue-primary 
               cursor-pointer text-[14px] leading-[18px] font-bold"
           type="button"
-          onClick={() => setAuth(!auth)}
+          onClick={() => {
+            setReg(false);
+            setAuth(!auth);
+          }}
         >
           ავტორიზაცია
         </button>
