@@ -11,10 +11,10 @@ const Footer = () => {
         className="text-[18px] max-sm:text-[13px] text-white 
        leading-[23px] font-bold opacity-80"
       >
-        <span className="max-sm:hidden">Racha with love</span> All rights
+        <span className="max-md:hidden">Racha with love</span> All rights
         reserved Copyrights 2022
       </h3>
-      <div className="flex items-center gap-[46px] max-sm:hidden">
+      <div className="flex items-center gap-[46px] max-lg:hidden">
         <FaFacebook className="text-[29px] text-white cursor-pointer" />
         <FaInstagram className="text-[29px] text-white cursor-pointer" />
         <FaYoutube className="text-[29px] text-white cursor-pointer" />
