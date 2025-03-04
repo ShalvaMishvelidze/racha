@@ -35,7 +35,7 @@ const RegisterMobile = () => {
 
   return (
     <div
-      className="hidden max-sm:block w-full bg-primary 
+      className="hidden max-lg:block w-full bg-primary 
     absolute top-0 left-0 z-5000 min-h-screen px-[20px] pb-[200px] pt-[60px] mt-[55px]"
     >
       <h1
