@@ -30,7 +30,7 @@ const AuthorizationDesktop = () => {
     >
       <h1
         className="text-[30px] leading-[30px] tracking-[1.5px]
-      text-red-primary font-bold"
+      text-red-primary font-bold mb-[70px]"
       >
         ავტორიზაცია
       </h1>
