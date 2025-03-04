@@ -18,7 +18,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section className="bg-primary pb-[220px] max-md:pb-[67px] ">
+    <section className="max-w-[1920px] w-full bg-primary pb-[220px] max-md:pb-[67px] ">
       <Hero
         heading={"რაჭა ჩვენი სიყვარულია"}
         paragraph={

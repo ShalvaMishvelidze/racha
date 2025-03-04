@@ -1,5 +1,6 @@
 const ServicesSection = ({ heading, paragraph, number, children }) => {
   return (
+    // className="mx-[100px] max-xl:mx-[25px] mt-[90px] max-xl:mt-[60px]"
     <section className="mx-25 max-sm:mx-5 mt-[90px] max-sm:mt-[30px]">
       <div className="flex justify-between">
         <div className="flex flex-col gap-4">
