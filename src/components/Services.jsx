@@ -7,8 +7,8 @@ import { people } from "../assets";
 const Services = () => {
   return (
     <Section heading={"სერვისები"} paragraph={"ჩვენ გთავაზობთ"} number={"02"}>
-      <div className="mt-[71px] flex gap-[5%]">
-        <div className="flex flex-col w-[60%] border-t border-blue-primary">
+      <div className="mt-[71px] max-xl:mt-[36px] flex gap-[5%]">
+        <div className="flex flex-col w-[60%] max-xl:w-full border-t border-blue-primary">
           <SingleService text={"ტურები რაჭაში"} Icon={BiBriefcase} />
           <SingleService
             text={"ადგილობრივი მეწარმეობა"}
@@ -18,7 +18,7 @@ const Services = () => {
         </div>
 
         <img
-          className="rounded-[20px] h-[414px] w-[35%] object-cover"
+          className="rounded-[20px] h-[414px] w-[35%] object-cover max-xl:hidden"
           src={people}
           alt="people"
         />
