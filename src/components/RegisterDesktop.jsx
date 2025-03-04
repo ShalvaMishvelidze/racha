@@ -35,7 +35,7 @@ const RegisterDesktop = () => {
 
   return (
     <div
-      className="max-lg:hidden w-[1384px]
+      className="max-xl:hidden w-[1384px]
   rounded-[30px] absolute bg-gray-15 top-[95px] 
   right-0 opacity-90 pl-[100px] pt-[100px] 
   pb-[48px] pr-[53px]"

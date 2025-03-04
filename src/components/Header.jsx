@@ -33,23 +33,23 @@ const Header = () => {
     <>
       <header
         className="absolute w-full top-0 left-0 flex justify-between items-start 
-    px-25 max-lg:px-5 py-12 max-lg:py-5 z-100"
+    px-[100px] max-xl:px-[20px] py-12 max-lg:py-5 z-100"
       >
-        <div className="flex items-start gap-25">
+        <div className="flex items-start gap-[100px] max-xl:gap-[25px]">
           <div
             className="w-[147px] max-lg:w-[50px] h-[135px] max-lg:h-[40px]
-           bg-red-80 rounded-tl-3xl max-lg:rounded-tl-[5px] 
-           rounded-br-3xl max-lg:rounded-br-[5px] 
+           bg-red-80 rounded-tl-[24px] max-lg:rounded-tl-[5px] 
+           rounded-br-[24px] max-lg:rounded-br-[5px] 
            rounded-tr-lg rounded-tr-[15px] 
            rounded-bl-lg rounded-bl-[15px] 
         flex flex-col justify-center items-center 
-        cursor-pointer"
+        cursor-pointer max-xl:h-[90px] max-xl:w-[110px]"
           >
-            <PiHeartStraightLight className="text-[#ffffff] text-[90px] max-lg:text-[32px]" />
-            <h1 className="text-2xl max-lg:text-[5px] font-bold max-lg:font-normal text-[#ffffff]">
+            <PiHeartStraightLight className="text-[#ffffff] text-[90px] max-lg:text-[32px] max-xl:text-[54px]" />
+            <h1 className="text-[24px] max-lg:text-[5px] font-bold max-lg:font-normal text-[#ffffff] max-xl:text-[16px]">
               With Love
             </h1>
-            <span className="text-[8px] max-lg:text-[2px] text-[#ffffff] mb-1">
+            <span className="text-[8px] max-lg:text-[2px] text-[#ffffff] mb-1 max-xl:text-[6px] ">
               RACHA
             </span>
           </div>
@@ -57,7 +57,7 @@ const Header = () => {
         </div>
         <div className="flex gap-6 max-lg:gap-[22px] justify-center items-center">
           {!localUser && (
-            <div className="max-lg:hidden">
+            <div className="max-xl:hidden">
               <AuthBtns />
             </div>
           )}
@@ -67,12 +67,12 @@ const Header = () => {
             </div>
           )}
           {localUser && (
-            <div className="flex justify-center items-center gap-[44px]  max-lg:gap-[12px]">
-              <h2 className="text-blue-primary max-lg:text-[13px] max-lg:leading-[38px] font-bold">
+            <div className="flex justify-center items-center gap-[44px]  max-xl:gap-[12px]">
+              <h2 className="text-blue-primary max-xl:text-[13px] max-xl:leading-[38px] font-bold">
                 GIORGI 99
               </h2>
-              <div className="relative max-lg:size-[38px] w-14 h-14 cursor-pointer">
-                <FaUser className="max-lg:text-[18px] text-[24px] text-[#ffffff] absolute top-1/2 left-1/2 transform -translate-1/2 z-10" />
+              <div className="relative max-xl:size-[38px] w-14 h-14 cursor-pointer">
+                <FaUser className="max-xl:text-[18px] text-[24px] text-[#ffffff] absolute top-1/2 left-1/2 transform -translate-1/2 z-10" />
                 <img
                   src={userBcg}
                   alt="localUser background"
@@ -81,8 +81,8 @@ const Header = () => {
               </div>
             </div>
           )}
-          <div className="max-lg:size-[38px] relative border-[2px] border-blue-primary flex justify-center items-center w-14 h-14 cursor-pointer rounded-full">
-            <span className="max-lg:text-[14px] leading-[19px] text-blue-primary font-bold">
+          <div className="max-xl:size-[38px] relative border-[2px] border-blue-primary flex justify-center items-center w-14 h-14 cursor-pointer rounded-full">
+            <span className="max-xl:text-[14px] leading-[19px] text-blue-primary font-bold">
               Eng
             </span>
           </div>
@@ -101,7 +101,7 @@ const Header = () => {
         {aside && <Aside />}
       </header>
       {!localUser && (
-        <div className="hidden max-lg:block relative z-1000">
+        <div className="hidden max-xl:block relative z-1000">
           <AuthBtns />
         </div>
       )}
