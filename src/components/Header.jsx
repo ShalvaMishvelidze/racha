@@ -101,7 +101,7 @@ const Header = () => {
         {aside && <Aside />}
       </header>
       {!localUser && (
-        <div className="hidden max-xl:block relative z-1000">
+        <div className="hidden max-xl:block relative z-1000 w-full">
           <AuthBtns />
         </div>
       )}
