@@ -2,9 +2,9 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const HeroNavItem = ({ heading, paragraph, Icon }) => {
   return (
-    <a href="#" className="group">
+    <a href="#" className="group max-sm:w-full">
       <div
-        className="flex gap-[21px] max-xxl:w-[350px] items-center mb-[16px] max-xxl:mb-[26px] 
+        className="flex gap-[21px] max-xxl:w-[350px] max-sm:w-full items-center mb-[16px] max-xxl:mb-[26px] 
        max-xxl:pl-[16.5px]"
       >
         <div

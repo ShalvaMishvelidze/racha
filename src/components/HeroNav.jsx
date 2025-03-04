@@ -4,7 +4,7 @@ import { BiBriefcase, BiBuilding } from "react-icons/bi";
 
 export const HeroNav = () => {
   return (
-    <section className="mx-[100px] max-xl:mx-[25px] flex max-sm:flex-col max-xl:flex-wrap justify-between items-center max-xl:items-center mt-15 max-xl:mt-[40px] max-xl:gap-[46.5px]">
+    <section className="mx-[100px] max-xl:mx-[25px] max-sm:mx-0 flex max-sm:flex-col max-xl:flex-wrap justify-between items-center max-xl:items-center mt-15 max-xl:mt-[40px] max-xl:gap-[46.5px]">
       <HeroNavItem
         heading={"ტურები რაჭაში"}
         paragraph={"გამოგვყევი"}
