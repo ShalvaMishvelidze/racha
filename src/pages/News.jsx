@@ -7,8 +7,8 @@ const News = () => {
     <section className="max-w-[1920px] bg-primary pb-[200px] max-sm:pb-[95px]">
       <HeroBanner heading={"სიახლეები"} />
       <p
-        className="mx-25 max-sm:mx-0 max-sm:px-5 
-      mt-[115px] max-sm:mt-[32px] w-[70%] max-sm:w-full 
+        className="px-[100px] max-xl:px-[20px] 
+      mt-[115px] max-xl:mt-[32px] w-[70%] max-xl:w-full 
       text-[30px] max-sm:text-[12px] leading-[40px] max-sm:leading-[16px] 
       text-blue-primary opacity-60"
       >
@@ -17,13 +17,13 @@ const News = () => {
         განვითარებაში მონაწილეობის მიღებაა.
       </p>
       <div
-        className="flex gap-[122px] max-sm:gap-[50px] max-sm:flex-col
-      mx-25 max-sm:mx-5 mt-[100px] max-sm:mt-[50px]"
+        className="flex gap-[122px] max-xl:gap-[50px] max-md:flex-col
+      mx-[100px] max-xl:mx-[20px] mt-[100px] max-xl:mt-[50px]"
       >
         <SingleNews />
         <SingleNews />
       </div>
-      <div className="mx-25 max-sm:mx-5 max-sm:mt-[50px]">
+      <div className="mx-[100px] max-md:mx-[20px] max-md:mt-[50px]">
         <Pagination />
       </div>
     </section>
