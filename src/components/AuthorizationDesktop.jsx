@@ -71,7 +71,7 @@ const AuthorizationDesktop = () => {
       {error && (
         <h3 className="text-red-primary">შეავსეთ ყველა ველი სწორად!</h3>
       )}
-      <SocialsContainer clr={"text-[#000000]"} />
+      <SocialsContainer dark />
     </div>
   );
 };
