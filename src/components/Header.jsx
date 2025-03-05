@@ -33,7 +33,7 @@ const Header = () => {
     <>
       <header
         className="absolute w-full top-0 left-0 flex justify-between items-start 
-    px-[100px] max-xxl:px-[20px] py-12 max-lg:py-5 z-100"
+    px-[100px] max-xxl:px-[20px] py-12 max-lg:py-5 z-1000"
       >
         <div className="flex items-start gap-[100px] max-xxl:gap-[25px]">
           <div
