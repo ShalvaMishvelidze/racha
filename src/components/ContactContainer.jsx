@@ -5,7 +5,7 @@ import SocialsContainer from "./SocialsContainer";
 
 const ContactContainer = () => {
   return (
-    <section className="mx-25 max-sm:mx-5 mt-[100px] max-sm:mt-[50px]">
+    <section className="mx-[100px] max-xl:mx-[20px] mt-[100px] max-xl:mt-[50px]">
       <h1
         className="font-bold text-[30px] max-sm:text-[12px] 
       leading-[38px] max-sm:leading-[20px] 
@@ -15,9 +15,9 @@ const ContactContainer = () => {
         რუკა
       </h1>
       <img
-        className="mt-[36px] max-sm:mt-[24px] w-full 
-        h-[502px] max-sm:h-[265px] object-cover 
-        rounded-[30px] max-sm:rounded-[10px]"
+        className="mt-[36px] max-md:mt-[24px] w-full 
+        h-[502px] max-md:h-[265px] object-cover 
+        rounded-[30px] max-md:rounded-[10px]"
         src={addressMap}
         alt="map"
       />
