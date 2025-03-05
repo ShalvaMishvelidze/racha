@@ -1,5 +1,6 @@
 import { office } from "../assets";
 import Section from "./Section";
+import PropTypes from "prop-types";
 
 const About = ({ number }) => {
   return (
@@ -40,4 +41,9 @@ const About = ({ number }) => {
     </Section>
   );
 };
+
+About.propTypes = {
+  number: PropTypes.string.isRequired,
+};
+
 export default About;

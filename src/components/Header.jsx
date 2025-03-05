@@ -36,15 +36,7 @@ const Header = () => {
     px-[100px] max-xxl:px-[20px] py-12 max-lg:py-5 z-1000"
       >
         <div className="flex items-start gap-[100px] max-xxl:gap-[25px]">
-          <div
-            className="w-[147px] max-lg:w-[50px] h-[135px] max-lg:h-[40px]
-           bg-red-80 rounded-tl-[24px] max-lg:rounded-tl-[5px] 
-           rounded-br-[24px] max-lg:rounded-br-[5px] 
-           rounded-tr-lg rounded-tr-[15px] 
-           rounded-bl-lg rounded-bl-[15px] 
-        flex flex-col justify-center items-center 
-        cursor-pointer max-xxl:h-[90px] max-xxl:w-[110px]"
-          >
+          <div className="w-[147px] max-lg:w-[50px] h-[135px] max-lg:h-[40px] bg-red-80 rounded-tl-[24px] max-lg:rounded-tl-[5px] rounded-br-[24px] max-lg:rounded-br-[5px] rounded-tr-[15px] rounded-bl-[15px] flex flex-col justify-center items-center cursor-pointer max-xxl:h-[90px] max-xxl:w-[110px]">
             <PiHeartStraightLight className="text-[#ffffff] text-[90px] max-lg:text-[32px] max-xxl:text-[54px]" />
             <h1 className="text-[24px] max-lg:text-[5px] font-bold max-lg:font-normal text-[#ffffff] max-xxl:text-[16px]">
               With Love

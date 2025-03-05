@@ -15,11 +15,7 @@ const Banner = () => {
           alt="ocean"
         />
       </div>
-      <div
-        className="absolute right-[110px] max-xxl:right-[26px] 
-          bottom-[50px] max-lg:bottom-[0px] max-xxl:bottom-[28px] flex gap-[35px] 
-          max-xxl:gap-[20px] z-50 hidden max-xxl:flex"
-      >
+      <div className="absolute right-[110px] max-xxl:right-[26px] bottom-[50px] max-lg:bottom-[0px] max-xxl:bottom-[28px] gap-[35px] max-xxl:gap-[20px] z-50 hidden max-xxl:flex">
         <button
           className="group size-12 max-xxl:size-[32px] border border-[#ffffff] rounded-full 
             flex justify-center items-center hover:bg-[#ffffff] cursor-pointer

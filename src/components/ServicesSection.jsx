@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const ServicesSection = ({ heading, paragraph, number, children }) => {
   return (
     <section className="mx-[100px] max-xl:mx-[20px] mt-[90px] max-xl:mt-[30px]">
@@ -18,4 +20,12 @@ const ServicesSection = ({ heading, paragraph, number, children }) => {
     </section>
   );
 };
+
+ServicesSection.propTypes = {
+  heading: PropTypes.string.isRequired,
+  paragraph: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};
+
 export default ServicesSection;

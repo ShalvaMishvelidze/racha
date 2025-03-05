@@ -1,4 +1,5 @@
 import { FiArrowUpRight } from "react-icons/fi";
+import PropTypes from "prop-types";
 
 const SingleService = ({ text, Icon }) => {
   return (
@@ -16,4 +17,10 @@ const SingleService = ({ text, Icon }) => {
     </a>
   );
 };
+
+SingleService.propTypes = {
+  text: PropTypes.string.isRequired,
+  Icon: PropTypes.elementType.isRequired,
+};
+
 export default SingleService;

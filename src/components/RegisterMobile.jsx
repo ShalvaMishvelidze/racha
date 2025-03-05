@@ -3,7 +3,7 @@ import { useLocalStorage } from "../hooks/useLocalStorage";
 import InputDesktop from "./InputDesktop";
 
 const RegisterMobile = () => {
-  const [_, setLocalUser] = useLocalStorage("user", null);
+  const [, setLocalUser] = useLocalStorage("user", null);
   const [user, setUser] = useState({
     name: "",
     lastName: "",

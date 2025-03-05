@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const HeroText = ({ heading, paragraph }) => {
   return (
     <>
@@ -10,4 +12,10 @@ const HeroText = ({ heading, paragraph }) => {
     </>
   );
 };
+
+HeroText.propTypes = {
+  heading: PropTypes.string,
+  paragraph: PropTypes.string,
+};
+
 export default HeroText;

@@ -1,4 +1,5 @@
 import { FiArrowUpRight } from "react-icons/fi";
+import PropTypes from "prop-types";
 
 const HeroNavItem = ({ heading, paragraph, Icon }) => {
   return (
@@ -41,4 +42,11 @@ const HeroNavItem = ({ heading, paragraph, Icon }) => {
     </a>
   );
 };
+
+HeroNavItem.propTypes = {
+  heading: PropTypes.string.isRequired,
+  paragraph: PropTypes.string.isRequired,
+  Icon: PropTypes.elementType.isRequired,
+};
+
 export default HeroNavItem;

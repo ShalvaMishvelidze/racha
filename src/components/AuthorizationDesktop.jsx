@@ -4,7 +4,7 @@ import InputDesktop from "./InputDesktop";
 import SocialsContainer from "./SocialsContainer";
 
 const AuthorizationDesktop = () => {
-  const [_, setLocalUser] = useLocalStorage("user", null);
+  const [, setLocalUser] = useLocalStorage("user", null);
   const [user, setUser] = useState({
     email: "",
     password: "",

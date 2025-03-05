@@ -1,6 +1,7 @@
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import Banner from "./Banner";
 import ThemeBtn from "./ThemeBtn";
+import PropTypes from "prop-types";
 
 const HeroBanner = ({ heading }) => {
   const [user] = useLocalStorage("user", null);
@@ -45,4 +46,9 @@ const HeroBanner = ({ heading }) => {
     </section>
   );
 };
+
+HeroBanner.propTypes = {
+  heading: PropTypes.string.isRequired,
+};
+
 export default HeroBanner;

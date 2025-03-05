@@ -5,8 +5,8 @@ const Slider = () => {
   return (
     <>
       <div
-        className="z-10 w-[1265px] max-xxl:w-full  h-[568px] max-xxl:h-[274px]
-    rounded-[30px] absolute max-xxl:relative right-[67px] max-xxl:right-0 z-10 overflow-hidden"
+        className="z-10 w-[1265px] max-xxl:w-full  h-[568px] max-xxl:h-[400px] max-xl:h-[274px]
+    rounded-[30px] absolute max-xxl:relative right-[67px] max-xxl:right-0 overflow-hidden"
       >
         <img
           className="w-full h-full object-cover opacity-65"

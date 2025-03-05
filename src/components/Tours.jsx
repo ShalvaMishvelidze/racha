@@ -1,6 +1,7 @@
 import HotelsContainer from "./HotelsContainer";
 import Pagination from "./Pagination";
 import ServicesSection from "./ServicesSection";
+import PropTypes from "prop-types";
 
 const Tours = ({ number }) => {
   return (
@@ -16,4 +17,9 @@ const Tours = ({ number }) => {
     </ServicesSection>
   );
 };
+
+Tours.propTypes = {
+  number: PropTypes.string.isRequired,
+};
+
 export default Tours;

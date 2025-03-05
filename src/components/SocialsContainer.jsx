@@ -1,4 +1,5 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
+import PropTypes from "prop-types";
 
 const SocialsContainer = ({ dark }) => {
   return (
@@ -25,4 +26,9 @@ const SocialsContainer = ({ dark }) => {
     </div>
   );
 };
+
+SocialsContainer.propTypes = {
+  dark: PropTypes.bool,
+};
+
 export default SocialsContainer;

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const InputDesktop = ({ label, name, type, value, user, setUser }) => {
   return (
     <div className="flex flex-col ">
@@ -18,4 +20,14 @@ const InputDesktop = ({ label, name, type, value, user, setUser }) => {
     </div>
   );
 };
+
+InputDesktop.propTypes = {
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  user: PropTypes.object.isRequired,
+  setUser: PropTypes.func.isRequired,
+};
+
 export default InputDesktop;

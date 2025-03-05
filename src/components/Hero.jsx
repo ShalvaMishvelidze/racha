@@ -5,7 +5,7 @@ import ThemeBtn from "./ThemeBtn";
 const Hero = () => {
   const [user] = useLocalStorage("user", null);
   return (
-    <section className="relative z-1 h-[710px] max-xxl:h-auto pt-[142px] max-xxl:pt-[156px] mx-25 max-xxl:mx-5 flex flex-col justify-center">
+    <section className="relative z-1 h-[710px] max-xxl:h-auto pt-[142px] max-xxl:pt-[156px] mx-[100px] max-xl:mx-[20px] flex flex-col justify-center">
       <Slider />
       <div className="z-20 flex flex-col max-xxl:h-full max-xxl:w-full gap-10 max-xxl:absolute top-0 left-0">
         <h1
@@ -25,7 +25,7 @@ const Hero = () => {
           ჩვენ ვაერთიანებთ რეგიონული მასშტაბის ტურისტულ ობიექტებს, სერვისებსა და
           ღირსშესანიშნაობებს.
         </p>
-        <div className="absolute left-[30px] bottom-[200px] gap-[21px] items-center z-100 max-lg:hidden hidden max-xxl:flex">
+        <div className="absolute left-[30px] max-xl:bottom-[200px] gap-[21px] items-center z-100 max-lg:hidden hidden max-xxl:flex max-xxl:bottom-[320px]">
           <h1
             className="leading-[32px] text-blue-primary font-bold 
         max-xxl:text-[12px] max-xxl:leading-[32px] max-xxl:font-normal"

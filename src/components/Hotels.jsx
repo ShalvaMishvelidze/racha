@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import HotelsContainer from "./HotelsContainer";
 import Pagination from "./Pagination";
 import Section from "./Section";
@@ -16,4 +17,9 @@ const Hotels = ({ number }) => {
     </Section>
   );
 };
+
+Hotels.propTypes = {
+  number: PropTypes.string.isRequired,
+};
+
 export default Hotels;

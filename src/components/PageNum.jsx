@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const PageNum = ({ number }) => {
   return (
     <button
@@ -11,4 +13,9 @@ const PageNum = ({ number }) => {
     </button>
   );
 };
+
+PageNum.propTypes = {
+  number: PropTypes.string.isRequired,
+};
+
 export default PageNum;
