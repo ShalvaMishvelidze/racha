@@ -5,16 +5,12 @@ import ThemeBtn from "./ThemeBtn";
 const HeroBanner = ({ heading }) => {
   const [user] = useLocalStorage("user", null);
   return (
-    <section
-      className="relative h-[552px] pt-[142px] 
-    max-sm:h-[325px]
-     mx-[100px] max-xl:mx-[20px] flex flex-col justify-center"
-    >
+    <section className="relative h-[552px] pt-[142px] max-lg:pt-[184px] max-lg:h-[400px] max-sm:h-[325px] mx-[100px] max-xl:mx-[20px] flex flex-col justify-center max-lg:mb-[70px] max-sm:mb-0">
       <Banner />
       <div className="z-20 flex flex-col gap-10">
         <h1
-          className="max-w-[983px] text-[60px] max-sm:text-[20px] leading-[38px] max-sm:leading-[24px] text-blue-primary 
-         font-bold max-xxl:absolute left-[30px] max-xxl:left-[25px] max-xxl:bottom-[180px] bottom-[23px]"
+          className="max-w-[983px] text-[60px] max-lg:text-[40px] max-sm:text-[20px] leading-[38px] max-lg:leading-[32px] max-sm:leading-[24px] text-blue-primary 
+         font-bold max-xxl:absolute left-[30px] max-xxl:left-[25px] max-xxl:bottom-[180px] bottom-[23px] max-lg:bottom-[90px]"
         >
           {heading}
         </h1>

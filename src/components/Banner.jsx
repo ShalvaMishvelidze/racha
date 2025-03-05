@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <>
       <div
-        className="w-[1426px] h-[401px] max-xxl:w-full max-sm:h-[179px] 
+        className="w-[1426px] h-[401px] max-lg:h-[320px] max-xxl:w-full max-sm:h-[179px] 
     rounded-[30px] absolute right-[67px] max-xxl:right-auto 
     z-10 overflow-hidden"
       >
@@ -17,7 +17,7 @@ const Banner = () => {
       </div>
       <div
         className="absolute right-[110px] max-xxl:right-[26px] 
-          bottom-[50px] max-xxl:bottom-[28px] flex gap-[35px] 
+          bottom-[50px] max-lg:bottom-[0px] max-xxl:bottom-[28px] flex gap-[35px] 
           max-xxl:gap-[20px] z-50 hidden max-xxl:flex"
       >
         <button
