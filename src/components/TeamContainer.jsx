@@ -2,11 +2,7 @@ import TeamMember from "./TeamMember";
 
 const TeamContainer = () => {
   return (
-    <div
-      className="grid grid-cols-4 max-sm:grid-cols-2 max-sm:gap-[20px]
-      gap-[91px] mt-[40px] max-sm:mt-[32px] 
-    mx-25 max-sm:mx-5 mt-[70px]"
-    >
+    <div className="flex flex-wrap justify-between gap-[10px] max-sm:gap-[20px] max-xl:mt-[40px] max-sm:mt-[32px] mx-[100px] max-xl:mx-[20px] mt-[70px]">
       <TeamMember />
       <TeamMember />
       <TeamMember />
