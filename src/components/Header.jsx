@@ -49,7 +49,7 @@ const Header = () => {
         </div>
         <div className="flex gap-6 max-lg:gap-[22px] justify-center items-center">
           {!localUser && (
-            <div className="max-xl:hidden">
+            <div className="max-xl:absolute max-xl:left-1/2 max-xl:transform max-xl:-translate-x-1/2 max-xl:w-full max-xl:top-0">
               <AuthBtns />
             </div>
           )}
@@ -92,11 +92,6 @@ const Header = () => {
         </div>
         {aside && <Aside />}
       </header>
-      {!localUser && (
-        <div className="hidden max-xl:block relative z-1000 w-full">
-          <AuthBtns />
-        </div>
-      )}
     </>
   );
 };
