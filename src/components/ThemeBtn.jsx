@@ -18,10 +18,16 @@ const ThemeBtn = () => {
   return (
     <button
       type="button"
-      className="cursor-pointer relative w-[108px] max-sm:w-[81px] h-[40px] bg-gray-20 rounded-[50px] "
+      className="cursor-pointer relative w-[108px] max-xl:w-[81px] h-[40px] p-[6px] bg-gray-20 rounded-[50px] "
       onClick={() => setDarkMode(!darkMode)}
     >
-      <div className="size-[28px] bg-[#ffffff] rounded-full absolute top-1/2 transform -translate-y-1/2 right-[6px]"></div>
+      <div
+        className={`size-[28px] bg-[#ffffff] rounded-full transform transition-all duration-500  ${
+          darkMode
+            ? "translate-x-[66px] max-xl:translate-x-[40px]"
+            : "translate-x-0"
+        }`}
+      ></div>
     </button>
   );
 };
