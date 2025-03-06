@@ -12,6 +12,11 @@ import frameRectangle from "./frame-rectangle.svg";
 import rectangle from "./rectangle.svg";
 import userBcg from "./user-bcg.svg";
 import hamburger from "./hamburger.svg";
+import bcg1 from "./bcg-1.jpg";
+import bcg2 from "./bcg-2.jpg";
+import bcg3 from "./bcg-3.jpg";
+import bcg4 from "./bcg-4.jpg";
+import bcg5 from "./bcg-5.jpg";
 import hotel from "./hotel.jpg";
 import office from "./office.jpg";
 import people from "./people.jpg";
@@ -34,6 +39,11 @@ export {
   rectangle,
   userBcg,
   hamburger,
+  bcg1,
+  bcg2,
+  bcg3,
+  bcg4,
+  bcg5,
   hotel,
   office,
   people,
