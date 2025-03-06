@@ -14,13 +14,15 @@ const ContactContainer = () => {
       >
         რუკა
       </h1>
-      <img
-        className="mt-[36px] max-md:mt-[24px] w-full 
+      <a href="https://maps.app.goo.gl/NhSpZkgpQmCSsVXGA" target="_blank">
+        <img
+          className="mt-[36px] max-md:mt-[24px] w-full 
         h-[502px] max-md:h-[265px] object-cover 
         rounded-[30px] max-md:rounded-[10px]"
-        src={addressMap}
-        alt="map"
-      />
+          src={addressMap}
+          alt="map"
+        />
+      </a>
       <SocialsContainer />
       <div className="flex gap-[80px] max-sm:gap-[20px] mt-[55px] max-sm:mt-[20px] items-center">
         <div className="flex items-center gap-[18px] max-sm:gap-[8px]">
